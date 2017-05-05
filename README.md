@@ -29,3 +29,5 @@ and then create the db in that tablespace.
 
 * createdb nameofdb
 * createuser --interactive --pwprompt --no-superuser --no-createrole --no-createdb nameofuser
+* psql --dbname=postgres://nameofuser:passwd@localhost/nameofdb   (test connection)
+
