@@ -24,3 +24,8 @@ and then create the db in that tablespace.
 # Failling tmp for hash join on database. 
 
 *http://stackoverflow.com/questions/29602409/could-not-write-to-hash-join-temporary-file-no-space-left-on-device
+
+# general use on psql 
+
+* createdb nameofdb
+* createuser --interactive --pwprompt --no-superuser --no-createrole --no-createdb nameofuser
