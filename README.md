@@ -30,4 +30,6 @@ and then create the db in that tablespace.
 * createdb nameofdb
 * createuser --interactive --pwprompt --no-superuser --no-createrole --no-createdb nameofuser
 * psql --dbname=postgres://nameofuser:passwd@localhost/nameofdb   (test connection)
+* restore: pg_restore --dbname=postgres://zinalat:zinalat@localhost/zinalat  --no-acl --no-owner -c /tmp/2017.07.27_zinalat_database.sql
+* dump: pg_dump --dbname=postgres://ipmservice:ipmservice@localhost/ipmservice --no-acl  --no-owner -Fc -f /tmp/ipmservice_12.07.2017.sql
 
