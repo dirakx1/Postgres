@@ -33,6 +33,8 @@ and then create the db in that tablespace.
 * restore: pg_restore --dbname=postgres://zinalat:zinalat@localhost/zinalat  --no-acl --no-owner -c /tmp/2017.07.27_zinalat_database.sql
 * dump: pg_dump --dbname=postgres://ipmservice:ipmservice@localhost/ipmservice --no-acl  --no-owner -Fc -f /tmp/ipmservice_12.07.2017.sql
 * drop used db 
+'''
 dct stop  o dc stop first
 SELECT datname as database, pid as pid, usename as username FROM pg_stat_activity;
 select pg_terminate_backend(23628) from pg_stat_activity where usename='npo-test';
+'''
